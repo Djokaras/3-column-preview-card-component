@@ -1,0 +1,127 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Lexand Deca', sans-serif;
+	padding: 10rem 15rem;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+.card {
+	padding: 6rem 7rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+}
+
+.card-title {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 3.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 95%);
+}
+
+.card-text {
+	font-size: 1.6rem;
+	line-height: 1.8;
+	color: hsla(0, 0%, 100%, 0.75);
+	margin-bottom: 9.6rem;
+}
+
+.btn {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: hsla(0, 0%, 100%, 0.75);
+	border: 2px solid hsl(0, 0%, 95%);
+	border-radius: 40px;
+	padding: 1.4rem 2.2rem;
+	transition: all 0.3s;
+}
+
+.btn--orange:hover,
+.btn--orange:active {
+	color: hsl(31, 77%, 52%);
+	background-color: white;
+}
+
+.btn--blue:hover,
+.btn--blue:active {
+	color: hsl(184, 100%, 22%);
+	background-color: white;
+}
+
+.btn--green:hover,
+.btn--green:active {
+	color: hsl(179, 100%, 13%);
+	background-color: white;
+}
+
+.card--sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.card--suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+	text-align: center;
+}
